@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #100b08;
+    overflow-x: hidden;
+}
+
+.main {
+    min-height: 100vh;
+    background: url('fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 0px 10%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-container .logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #100b08);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+
+
+/* Adicione isso para garantir que o espaçamento entre as palavras nos links não seja excessivo */
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    letter-spacing: normal; /* Garante que o espaçamento entre as letras seja normal */
+    word-spacing: normal; /* Garante que o espaçamento entre as palavras seja normal */
+}
+
+/* Restante do seu CSS permanece o mesmo */
+
+.navbar a:hover,
+.navbar a.active {
+    color: #eab55ade;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo-container .logo {
+        font-size: 20px;
+    }
+
+
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff; /* Cor do ícone */
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+        }
+    
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        background: #100b08;
+        border: 2px solid #4E3327;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar.active a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 0 10%;
+    z-index: 2;
+}
+
+.home-content {
+    max-width: 800px; /* Aumentei a largura máxima para ocupar mais espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+.home-content .text-h4 {
+    font-size: 24px;
+    color: #eab55a;
+    margin-bottom: 10px;
+}
+
+.home-content .text-h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    width: 190px;
+    height: 55px;
+    background: #4E3327;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #8C6239;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.start-btn:hover {
+    background: #100b08;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        background: #100b08;
+        border: 2px solid #4E3327;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .home {
+        padding: 100px 5%;
+    }
+
+    .home-content .text-h1 {
+        font-size: 36px;
+        line-height: 1.5;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    background: #4E3327;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
