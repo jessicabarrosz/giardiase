@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Giardíase </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <main class="main">
+        <header class="header">
+            <div class="logo-container">
+                <a href="#" class="logo">Quiz Parasito</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Ícone do menu -->
+            <nav class="navbar">
+                <a href="#" class="active">Página Inicial</a>
+                <a href="aboutusindex.html">Sobre a gente</a>
+                <a href="contatoindex.html">Contato</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="quiz-section">
+              <div class="quiz-box">
+                <h1>Giardíase</h1>
+                <div class="quiz-header">
+                    <span>Parasitologia Básica</span>
+                    <span class="header-score">Pontuação: 0 / 10</span>
+                </div>
+                <h2 class="question-text">Questao 1</h2>
+
+                <div class="option-list">
+                    <!-- <div class="option">
+                         <span>alternativa a</span>
+                    </div>
+                
+                    <div class="option">
+                        <span>alternativa b</span>
+                    </div>
+                
+                    <div class="option">
+                        <span>alternativa c</span>
+                    </div>
+                
+                    <div class="option">
+                        <span>alternativa d</span>
+                    </div>!-->
+                </div>
+
+                <div class="quiz-footer">
+                    <span class="question-total">1 de 10 questões</span>
+                    <button class="next-btn">Próxima</button>
+                </div>
+
+              </div>
+
+              <div class="result-box">
+                <h2>Resultado</h2>
+                <div class="percentage-container">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <span class="score-text">Você acertou 0 de 10</span>
+                </div>
+
+                <div class="buttons">
+                    <button class="tryAgain-btn">Repetir</button>
+                    <button class="goHome-btn">Início</button>
+                </div>
+              </div>
+            </section>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>Giardíase</h1>
+                <p>Teste seus conhecimentos sobre parasitologia básica!</p>
+                <button class="start-btn">Começar Quiz</button>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h2>Guia</h2>
+        <span class="info">1. O quiz contém 10 perguntas sobre Giardíase.</span>
+        <span class="info">2. Apenas uma resposta pode ser selecionada por pergunta.</span>
+        <span class="info">3. Após iniciar o quiz, não é possível retroceder ou alterar respostas.</span>
+        <span class="info">4. Sinta-se à vontade para refazer o quiz quantas vezes desejar.</span>
+        <span class="info">5. Boa sorte e aproveite para testar seus conhecimentos!</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Sair</button>
+            <a href="#" class="info-btn continue-btn">Continuar</a>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Jéssica Barros</p>
+    </footer>
+</body>
